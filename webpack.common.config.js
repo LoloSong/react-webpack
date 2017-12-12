@@ -20,7 +20,8 @@ commonConfig = {
             use: [{
                 loader: 'url-loader',
                 options: {
-                    limit: 3072
+                    limit: 3072,
+                    name: 'images/[name].[hash:5].[ext]'
                 }
             }]
         }]
