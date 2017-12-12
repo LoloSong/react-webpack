@@ -1,15 +1,14 @@
-import React, {Component} from 'react';
-import {connect} from 'react-redux';
-import {get_userInfo} from 'actions/userInfoAction';
+import React, {Component} from 'react'
+import {connect} from 'react-redux'
+import {get_userInfo} from 'actions/userInfoAction'
 
 class UserInfo extends Component{
     handleClick(){
-        const { dispatch } = this.props;
+        const { dispatch } = this.props
         dispatch(get_userInfo())
     }
     
     render(){
-        const {userInfoReducer} = this.props;
         return(
             <div>
                 <div>userInfo页面</div>
@@ -22,6 +21,6 @@ class UserInfo extends Component{
 
 // export default UserInfo;
 export default connect(state => {
-    const { userInfoReducer } = state;
+    const { userInfoReducer } = state
     return { userInfoReducer }
-})(UserInfo);
+})(UserInfo)

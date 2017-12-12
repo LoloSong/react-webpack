@@ -1,7 +1,8 @@
-import React, {Component} from 'react';
+import React, {Component} from 'react'
 
 class Home extends Component{
-    constructor(props){super(props);
+    constructor(props){
+        super(props)
         this.state = {
             count: 0
         }
@@ -24,4 +25,4 @@ class Home extends Component{
     }
 }
 
-export default Home;
+export default Home

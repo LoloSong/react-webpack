@@ -1,6 +1,6 @@
-import React, {Component} from 'react';
-import Nav from './components/Nav/Nav';
-import Router from './router/Router';
+import React, {Component} from 'react'
+import Nav from './components/Nav/Nav'
+import Router from './router/Router'
 
 class App extends Component{
     render(){
@@ -12,4 +12,4 @@ class App extends Component{
         )
     }
 }
-export default App;
+export default App

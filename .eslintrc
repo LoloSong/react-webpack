@@ -1,0 +1,26 @@
+{
+    "parser": "babel-eslint",
+    "env": {
+        "browser": true,
+        "node": true,
+        "commonjs": true,
+        "es6": true
+    },
+    "rules": {
+        "no-console": "warn",       //禁止使用console
+        "no-unused-vars": "off",        //可以出现未使用过的变量
+        "no-undef": "off",      //可以使用未声明的变量
+        "no-var": "error",      //禁用var，用let和const代替
+        "no-cond-assign": "error",      //禁止在条件表达式中使用赋值语句
+        "eqeqeq": ["error","always"],       //必须使用全等
+        "indent": ["error",4],      //缩进风格
+        "quotes": ["error", "single",{"avoidEscape": true, "allowTemplateLiterals": true}],     //引号类型
+        "semi": ["error", "never"],     //分号结尾
+        "arrow-body-style": ["error", "always"],        //箭头函数体使用大括号
+        "no-multiple-empty-lines": ["warn", {"max": 3}],        //空行最多不能超过2行
+        "curly": ["error", "all"]        //必须使用 if(){} 中的{}
+    },
+    "extends": [
+        "eslint:recommended"
+    ]
+}

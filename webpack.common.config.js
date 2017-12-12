@@ -7,7 +7,7 @@ commonConfig = {
     module: {
         rules: [{
             test: /\.js$/,
-            use: ['babel-loader?cacheDirectory=true'],
+            use: ['babel-loader?cacheDirectory=true','eslint-loader'],
             include: path.join(__dirname, 'src')
         },{
             test: /\.css$/,

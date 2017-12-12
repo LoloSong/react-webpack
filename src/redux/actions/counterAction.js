@@ -1,4 +1,4 @@
-import * as type from '../actionType';
+import * as type from '../actionType'
 
 export const increment = () => {
     return {type: type.increment}

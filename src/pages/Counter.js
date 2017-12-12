@@ -1,26 +1,25 @@
-import React, {Component} from 'react';
-import {connect} from 'react-redux';
-import {increment, decrement, reset} from 'actions/counterAction';
+import React, {Component} from 'react'
+import {connect} from 'react-redux'
+import {increment, decrement, reset} from 'actions/counterAction'
 
 class Counter extends Component{
-
     increment(){
-        const { dispatch } = this.props;
-        dispatch(increment());
+        const { dispatch } = this.props
+        dispatch(increment())
     }
 
     decrement(){
-        const { dispatch } = this.props;
-        dispatch(decrement());
+        const { dispatch } = this.props
+        dispatch(decrement())
     }
 
     reset(){
-        const { dispatch } = this.props;
-        dispatch(reset());
+        const { dispatch } = this.props
+        dispatch(reset())
     }
 
     render(){
-        const { countReducer } = this.props;
+        const { countReducer } = this.props
         return(
             <div>
                 <div>当前计数为: {countReducer.count}</div>
@@ -33,6 +32,6 @@ class Counter extends Component{
 }
 
 export default connect(state => {
-    const { countReducer } = state;
+    const { countReducer } = state
     return { countReducer }
-})(Counter);
+})(Counter)

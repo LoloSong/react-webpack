@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, {Component} from 'react'
 import '../style/Page1.css'
 
 class Page1 extends Component{
@@ -13,4 +13,4 @@ class Page1 extends Component{
     }
 }
 
-export default Page1;
+export default Page1
